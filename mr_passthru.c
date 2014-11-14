@@ -25,32 +25,6 @@
 #include "lutil.h"
 #include "ac/string.h"
 
-/*
-static int
-okMatch(
-	int *matchp,
-	slap_mask_t flags,
-	Syntax *syntax,
-	MatchingRule *mr,
-	struct berval *value,
-	void *assertedValue )
-{
-	int match;
-	struct berval *asserted = (struct berval *) assertedValue;
-
-	assert( matchp != NULL );
-	assert( value != NULL );
-	assert( assertedValue != NULL );
-	assert( !BER_BVISNULL( value ) );
-	assert( !BER_BVISNULL( asserted ) );
-
-	match = 0;
-
-	*matchp = match;
-	return LDAP_SUCCESS;
-}
-*/
-
 static int
 failMatch(
 	int *matchp,
